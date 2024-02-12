@@ -43,17 +43,26 @@ pip install allure-pytest
 #### - ищем по селектору карточку "хy" и кликаем по нему, чтобы просмотреть детали
 #### - ищем по имени класса артикул для "xy"
 #### - проверяем соответствие
-### Запускаем проверку
+### Прогоняем тесты
 <img width="191" alt="Снимок экрана 2024-02-12 в 19 45 05" src="https://github.com/AikokulUlan-qa/Python-Selenium-Allure-/assets/154068607/cb5cd923-54e1-4d08-8b50-556c4fa92873">
+#### Тесты с меткой ```@pytest.mark.xfail(reason="Wait for fix bug")``` означают, что они заведомо упадут. Однако независимо от нее, тесты пройдут проверку.
+### После прогонов тестов следует запустить сервер отчетов командой:
+```
+cd <путь до каталог allure\bin> (первая команда)
+.\allure.bat (вторая)
+.\allure serve <путь до каталога с результатами> (третья)
+```
 
+#### Для MacOS (если установил allure через brew)
+```
+allure serve /Users/gdolnikov/projects/selenium.qa.studio/my_allure_results
+```
+#### my_allure_results — это ты сам создаешь или выбираешь в какую папку смотреть allure-у для создания красивого дашборда
 
+### Итогом выполнения последней команды будет запуск и открытие в браузере страницы с отчетами
+<p align="center">
+  <img src="https://assets-global.website-files.com/610bfc91018da0bc815264aa/6203c5b616ae640ffd351bb3_5b3LRXxIjWi43mVQNkGhtmzHJVDjnLnQv95f89rBnL8HM01gB7xCKxjuHLlgkofFq98p-oqxGxKeLgRxcTnqB24MEoybxiNd_VCKRgIcgQRF4vMDZhtzqlc0JguqSI6-2IxsBGOz.png"/>
+</p>
 
   
-### ☑︎Скачиваем файл-установщик с официального сайта https://www.python.org/downloads/
 
-### ☞Затем настраиваем Visual Code
-### ☞Нужно перейти в Extensions (Расширения), ввести Python и нажать Install.
-### ☑︎Далее создать на компьютере папку, где будет хранится твой проект. Это можно сделать в Vs Code в проводнике, там же создать файл.
-  ###   Теперь Python установлен на ваш компьютер, пора приступить к конкретному написанию первого кода.
-###  - Для установки любых библиотек нужно открыть терминал VS Code и выполнить команду pip install название_библиотеки 
- ####   ☑︎ requests

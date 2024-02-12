@@ -44,8 +44,8 @@ pip install allure-pytest
 #### - ищем по имени класса артикул для "xy"
 #### - проверяем соответствие
 ### Запускаем проверку
-<p align="center"file:///Users/ajkokululanbekova/Desktop/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202024-02-12%20%D0%B2%2019.45.05.png"/>
-</p>
+<img width="191" alt="Снимок экрана 2024-02-12 в 19 45 05" src="https://github.com/AikokulUlan-qa/Python-Selenium-Allure-/assets/154068607/cb5cd923-54e1-4d08-8b50-556c4fa92873">
+
 
 
   
